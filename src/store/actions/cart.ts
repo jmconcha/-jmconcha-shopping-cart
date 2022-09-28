@@ -1,11 +1,15 @@
 import { CartItem } from '../../types';
 import { CartTypes } from './action-types';
 
-export function addToCart(id: string) {
+export function addToCart(cartItem: CartItem) {
   return {
     type: CartTypes.CART_ADD,
     payload: {
-      id,
+      id: cartItem.id,
+      name: cartItem.name,
+      price: cartItem.price,
+      quantity: cartItem.quantity,
+      imageUrl: cartItem.imageUrl,
     },
   };
 }
