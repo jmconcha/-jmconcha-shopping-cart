@@ -9,17 +9,20 @@ import {
   CartAddType,
   CartItemIncrementType,
 } from '../../../store/reducers/cart';
+import { CartItem } from '../../../types';
 
 function AddToCartUseCase(): Function {
   const dispatch = useAppDispatch();
   const cartItems = useCartSelector();
 
-  const addToCart = (id: string) => {
+  const addToCart = (cartItem: CartItem) => {
     // * checks if item is already in cart
-    if (isInCart(cartItems, id)) {
-      dispatch(increaseCartItemQuantityAction(id) as CartItemIncrementType);
+    if (isInCart(cartItems, cartItem.id)) {
+      dispatch(
+        increaseCartItemQuantityAction(cartItem.id) as CartItemIncrementType
+      );
     } else {
-      dispatch(addToCartAction(id) as CartAddType);
+      dispatch(addToCartAction(cartItem) as CartAddType);
     }
   };
 

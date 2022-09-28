@@ -4,7 +4,6 @@ import { useCartSelector } from '../../../selectors';
 import { CartItem } from '../../../types';
 import { useAppDispatch } from '../../../hooks';
 import { incrementProductQuantityInCart as increaseCartItemQuantityAction } from '../../../store/actions/cart';
-import { isInStock } from '../utils';
 import { CartItemIncrementType } from '../../../store/reducers/cart';
 
 function IncreaseCartItemQuantityUseCase(): Function {

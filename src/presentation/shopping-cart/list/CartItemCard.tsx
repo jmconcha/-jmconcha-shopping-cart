@@ -1,7 +1,6 @@
 import React, { MouseEventHandler } from 'react';
 import styled from 'styled-components';
-
-import { Product } from '../../../types';
+import { CartItem } from '../../../types';
 
 const CardContainer = styled.div`
   border: 1px solid #cccccc;
@@ -89,7 +88,7 @@ const Col2 = styled.div`
 `;
 
 interface CardProps {
-  cartItem: Product;
+  cartItem: CartItem;
   handleRemove: MouseEventHandler<HTMLButtonElement>;
   handleDecrement: MouseEventHandler<HTMLButtonElement>;
   handleIncrement: MouseEventHandler<HTMLButtonElement>;
