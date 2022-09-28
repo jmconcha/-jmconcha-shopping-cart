@@ -1,3 +1,3 @@
-import ShoppingCart from 'src/presentation/shopping-cart';
+import ShoppingCart from 'src/presentation';
 
 export { ShoppingCart };

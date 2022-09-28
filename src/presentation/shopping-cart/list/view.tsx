@@ -1,7 +1,11 @@
 import React from 'react';
 
-function View() {
-  return <div>View</div>;
+interface ViewProps {
+  message: string;
+}
+
+function View(props: ViewProps) {
+  return <div>{props.message}</div>;
 }
 
 export default View;
