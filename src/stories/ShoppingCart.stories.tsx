@@ -12,6 +12,8 @@ const Template: ComponentStory<typeof ShoppingCart> = (args) => (
   <ShoppingCart {...args} />
 );
 
+export const ShoppingCartEmpty = Template.bind({});
+
 export const ShoppingCartWithItems = Template.bind({});
 ShoppingCartWithItems.args = {
   cartItems: [
@@ -37,4 +39,18 @@ ShoppingCartWithItems.args = {
       imageUrl: 'https://via.placeholder.com/600/92c952',
     },
   ],
+};
+
+export const ShoppingCartWithDisabledIncrementButton = Template.bind({});
+ShoppingCartWithDisabledIncrementButton.args = {
+  cartItems: [
+    {
+      id: 'id-1',
+      name: 'Product Name 1',
+      price: 100,
+      quantity: 1,
+      imageUrl: 'https://via.placeholder.com/600/92c952',
+    },
+  ],
+  disableIncrementButton: true,
 };
