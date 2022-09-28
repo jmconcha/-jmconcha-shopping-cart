@@ -4,7 +4,7 @@ import ListView from './view';
 
 describe('Shopping Cart <ListView />', () => {
   test('jest should work', () => {
-    render(<ListView />);
+    render(<ListView message="Hello world!" />);
 
     expect(true).toBe(true);
   });

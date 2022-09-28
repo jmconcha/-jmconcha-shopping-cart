@@ -2,7 +2,7 @@
   "compilerOptions": {
     // default config
     "target": "es5",
-    "module": "commonjs",
+    "module": "esnext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -22,5 +22,7 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
 }

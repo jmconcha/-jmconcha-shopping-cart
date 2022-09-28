@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import ShoppingCart from '../presentation';
+import { ShoppingCart } from 'src';
 
 export default {
   title: 'ShoppingCart/ListView',
@@ -14,5 +14,5 @@ const Template: ComponentStory<typeof ShoppingCart> = (args) => (
 
 export const Example1 = Template.bind({});
 Example1.args = {
-  message: 'Hello World!',
+  message: 'Hello world!',
 };
