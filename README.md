@@ -2,7 +2,7 @@
 
 Shopping Cart Mini-app.
 
-[![repository](https://img.shields.io/badge/repo-github-orange)](https://github.com/jmconcha/shopping-cart-lib)
+[![repository](https://img.shields.io/badge/repo-github-orange)](https://github.com/jmconcha/shopping-cart)
 
 ## Mini App
 
@@ -11,7 +11,7 @@ Shopping Cart Mini-app.
 ## Installation
 
 ```sh
-npm install @jmconcha/shopping-cart-lib
+npm install @jmconcha/shopping-cart
 ```
 
 &nbsp;
@@ -41,7 +41,7 @@ npm install @jmconcha/shopping-cart-lib
 
 ```jsx
 import React from 'react';
-import { ShoppingCart } from '@jmconcha/shopping-cart-lib';
+import { ShoppingCart } from '@jmconcha/shopping-cart';
 
 function Example() {
   return <ShoppingCart />;
@@ -58,7 +58,7 @@ export default Example;
 
 ```jsx
 import React from 'react';
-import { ShoppingCart } from '@jmconcha/shopping-cart-lib';
+import { ShoppingCart } from '@jmconcha/shopping-cart';
 
 function Example() {
   const cartItems = [
@@ -99,7 +99,7 @@ export default Example;
 
 ```jsx
 import React from 'react';
-import { ShoppingCart } from '@jmconcha/shopping-cart-lib';
+import { ShoppingCart } from '@jmconcha/shopping-cart';
 
 function Example() {
   const cartItems = [
