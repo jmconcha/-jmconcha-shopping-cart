@@ -1,5 +1,10 @@
 import { CartTypes } from '../actions/action-types';
-import { CartItem } from 'src/types';
+import { CartItem } from '../../types';
+
+export interface CartItemsSetType {
+  type: CartTypes.CART_SET;
+  payload: CartItem[];
+}
 
 export interface CartItemDecrementType {
   type: CartTypes.CART_QUANTITY_DECREMENT;
@@ -15,7 +20,7 @@ export interface CartItemIncrementType {
   };
 }
 
-export interface CartRemoveType {
+export interface CartItemRemoveType {
   type: CartTypes.CART_REMOVE;
   payload: {
     id: string;
@@ -35,9 +40,10 @@ export interface CartAddType {
 
 type CartReducerActionType =
   | CartAddType
-  | CartRemoveType
+  | CartItemRemoveType
   | CartItemIncrementType
-  | CartItemDecrementType;
+  | CartItemDecrementType
+  | CartItemsSetType;
 
 function cartReducer(
   state: CartItem[] = [],
@@ -83,6 +89,8 @@ function cartReducer(
 
         return cartItem;
       });
+    case CartTypes.CART_SET:
+      return [...action.payload];
     default:
       return state;
   }

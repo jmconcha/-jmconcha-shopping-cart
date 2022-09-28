@@ -1,10 +1,12 @@
 import cartReducer, {
   CartAddType,
-  CartRemoveType,
+  CartItemRemoveType,
   CartItemDecrementType,
   CartItemIncrementType,
+  CartItemsSetType,
 } from './cart';
 import { CartTypes } from '../actions/action-types';
+import { CartItem } from '../../types';
 
 describe('cart reducer', () => {
   test('should add product to cart', () => {
@@ -69,7 +71,7 @@ describe('cart reducer', () => {
       payload: {
         id: 'id2',
       },
-    } as CartRemoveType;
+    } as CartItemRemoveType;
 
     const newState = cartReducer(initialState, action);
     expect(newState).toEqual([
@@ -188,5 +190,46 @@ describe('cart reducer', () => {
 
     const newState = cartReducer(initialState, action);
     expect(newState.length).toBe(0);
+  });
+
+  test('should set cart data', () => {
+    const initialState: CartItem[] = [];
+    const action = {
+      type: CartTypes.CART_SET,
+      payload: [
+        {
+          id: 'id1',
+          name: 'Product 1',
+          price: 100,
+          quantity: 1,
+          imageUrl: 'https://via.placeholder.com/600/92c952',
+        },
+        {
+          id: 'id2',
+          name: 'Product 2',
+          price: 200,
+          quantity: 2,
+          imageUrl: 'https://via.placeholder.com/600/92c952',
+        },
+      ],
+    } as CartItemsSetType;
+
+    const newState = cartReducer(initialState, action);
+    expect(newState).toEqual([
+      {
+        id: 'id1',
+        name: 'Product 1',
+        price: 100,
+        quantity: 1,
+        imageUrl: 'https://via.placeholder.com/600/92c952',
+      },
+      {
+        id: 'id2',
+        name: 'Product 2',
+        price: 200,
+        quantity: 2,
+        imageUrl: 'https://via.placeholder.com/600/92c952',
+      },
+    ]);
   });
 });

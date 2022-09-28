@@ -1,3 +1,4 @@
+import { CartItem } from '../../types';
 import { CartTypes } from './action-types';
 
 export function addToCart(id: string) {
@@ -42,5 +43,12 @@ export function removeCartItem(id: string) {
     payload: {
       id,
     },
+  };
+}
+
+export function setData(cartItems: CartItem[]) {
+  return {
+    type: CartTypes.CART_SET,
+    payload: cartItems,
   };
 }
