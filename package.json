@@ -12,5 +12,10 @@
     "cart"
   ],
   "author": "Jayson Concha <jmconcha.pro@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "react": "^18.2.0",
+    "typescript": "^4.8.4"
+  }
 }
