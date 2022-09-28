@@ -19,7 +19,6 @@
     "baseUrl": ".",
     "lib": ["es6", "dom", "dom.iterable", "esnext"],
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true
