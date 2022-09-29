@@ -1,6 +1,6 @@
 {
   "name": "@jmconcha/shopping-cart",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "shopping cart",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -21,6 +21,15 @@
   ],
   "author": "Jayson Concha <jmconcha.pro@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmconcha/shopping-cart.git"
+  },
+  "homepage": "https://github.com/jmconcha/shopping-cart#readme",
+  "bugs": {
+    "url": "https://github.com/jmconcha/shopping-cart/issues",
+    "email": "jmconcha.pro@gmail.com"
+  },
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
