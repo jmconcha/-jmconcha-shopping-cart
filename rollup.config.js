@@ -31,7 +31,11 @@ module.exports = [
       peerDepsExternal(),
       typescript({
         tsconfig: './tsconfig.json',
-        exclude: ['/src/stories', '**/*.stories.tsx'],
+        exclude: [
+          '/src/stories',
+          '**/*.stories.tsx',
+          '**/*.(spec|test).(ts|tsx)',
+        ],
       }),
     ],
   },

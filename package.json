@@ -12,7 +12,9 @@
     "test": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "rollup": "rollup -c"
+    "clean": "rm -rf ./lib",
+    "rollup": "rollup -c",
+    "build": "npm run clean && npm run rollup"
   },
   "keywords": [
     "shop",
