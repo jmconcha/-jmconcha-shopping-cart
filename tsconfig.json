@@ -10,9 +10,9 @@
     // additional config
     "jsx": "react",
     "declaration": true,
+    "outDir": "lib",
     "declarationDir": "types",
     "sourceMap": true,
-    "outDir": "list",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,

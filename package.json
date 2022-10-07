@@ -1,6 +1,6 @@
 {
   "name": "@jmconcha/shopping-cart",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "shopping cart",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -12,7 +12,7 @@
     "test": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "clean": "rm -rf ./lib",
+    "clean": "rimraf lib",
     "rollup": "rollup -c",
     "build": "npm run clean && npm run rollup"
   },
