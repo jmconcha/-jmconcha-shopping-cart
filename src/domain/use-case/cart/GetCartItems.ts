@@ -1,5 +1,5 @@
-import { useCartSelector } from '../../../selectors';
-import { CartItem } from '../../../types';
+import { useCartSelector } from 'src/selectors';
+import { CartItem } from 'src/types';
 
 function GetCartItemsUseCase(): CartItem[] {
   const cartItems = useCartSelector();

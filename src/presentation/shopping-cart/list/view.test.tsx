@@ -3,9 +3,9 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import user from '@testing-library/user-event';
 
+import store from 'src/store';
+import { CartTypes } from 'src/store/actions/action-types';
 import ShoppingCart from './view';
-import store from '../../../store';
-import { CartTypes } from '../../../store/actions/action-types';
 
 afterEach(() => {
   store.dispatch({

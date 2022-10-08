@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { CartItem } from '../../../types';
+import { CartItem } from 'src/types';
 import CartItemCard from './CartItemCard';
-import useGetCartItems from '../../../domain/use-case/cart/GetCartItems';
-import useIncreaseCartItem from '../../../domain/use-case/cart/IncreaseCartItemQuantity';
-import useDecreaseCartItem from '../../../domain/use-case/cart/DecreaseCartItemQuantity';
-import useRemoveCartItem from '../../../domain/use-case/cart/RemoveCartItem';
-import { DataSource } from '../../../data-source';
+import useGetCartItems from 'src/domain/use-case/cart/GetCartItems';
+import useIncreaseCartItem from 'src/domain/use-case/cart/IncreaseCartItemQuantity';
+import useDecreaseCartItem from 'src/domain/use-case/cart/DecreaseCartItemQuantity';
+import useRemoveCartItem from 'src/domain/use-case/cart/RemoveCartItem';
+import { DataSource } from 'src/data-source';
 
 const Wrapper = styled.div`
   display: flex;

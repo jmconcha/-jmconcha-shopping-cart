@@ -1,15 +1,12 @@
-import { useAppDispatch } from '../../../hooks';
-import { useCartSelector } from '../../../selectors';
+import { useAppDispatch } from 'src/hooks';
+import { useCartSelector } from 'src/selectors';
 import {
   addToCart as addToCartAction,
   incrementProductQuantityInCart as increaseCartItemQuantityAction,
-} from '../../../store/actions/cart';
+} from 'src/store/actions/cart';
 import { isInCart } from '../utils';
-import {
-  CartAddType,
-  CartItemIncrementType,
-} from '../../../store/reducers/cart';
-import { CartItem } from '../../../types';
+import { CartAddType, CartItemIncrementType } from 'src/store/reducers/cart';
+import { CartItem } from 'src/types';
 
 function AddToCartUseCase(): Function {
   const dispatch = useAppDispatch();

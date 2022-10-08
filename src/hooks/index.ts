@@ -1,7 +1,7 @@
 import { useState, useEffect, MouseEventHandler } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { AppDispatch } from '../store';
+import { AppDispatch } from 'src/store';
 
 interface UseModalReturnType {
   showModalMessage: boolean;

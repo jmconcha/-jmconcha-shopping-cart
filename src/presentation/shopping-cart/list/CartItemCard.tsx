@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from 'react';
 import styled from 'styled-components';
-import { CartItem } from '../../../types';
+import { CartItem } from 'src/types';
 
 const CardContainer = styled.div`
   border: 1px solid #cccccc;

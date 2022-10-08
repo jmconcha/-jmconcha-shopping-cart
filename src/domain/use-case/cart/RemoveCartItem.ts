@@ -1,6 +1,6 @@
-import { useAppDispatch } from '../../../hooks';
-import { removeCartItem as removeCartItemAction } from '../../../store/actions/cart';
-import { CartItemRemoveType } from '../../../store/reducers/cart';
+import { useAppDispatch } from 'src/hooks';
+import { removeCartItem as removeCartItemAction } from 'src/store/actions/cart';
+import { CartItemRemoveType } from 'src/store/reducers/cart';
 
 function RemoveCartItemUseCase(): Function {
   const dispatch = useAppDispatch();

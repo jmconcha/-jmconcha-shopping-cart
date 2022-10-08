@@ -1,4 +1,4 @@
-import { CartItem } from '../../types';
+import { CartItem } from 'src/types';
 import { CartTypes } from './action-types';
 
 export function addToCart(cartItem: CartItem) {

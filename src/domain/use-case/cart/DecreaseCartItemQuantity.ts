@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { useAppDispatch } from '../../../hooks';
-import { decrementProductQuantityInCart as decreaseCartItemQuantityAction } from '../../../store/actions/cart';
-import { CartItemDecrementType } from '../../../store/reducers/cart';
+import { useAppDispatch } from 'src/hooks';
+import { decrementProductQuantityInCart as decreaseCartItemQuantityAction } from 'src/store/actions/cart';
+import { CartItemDecrementType } from 'src/store/reducers/cart';
 
 function DecreaseCartItemQuantity(): Function {
   const dispatch = useAppDispatch();

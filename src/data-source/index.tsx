@@ -1,10 +1,10 @@
 import React, { ComponentType, useEffect } from 'react';
 import { Provider } from 'react-redux';
 
-import { setData } from '../store/actions/cart';
-import store from '../store';
-import { CartItemsSetType } from '../store/reducers/cart';
-import { DataSourceComponentProps } from '../presentation/shopping-cart/module.types';
+import { setData } from 'src/store/actions/cart';
+import store from 'src/store';
+import { CartItemsSetType } from 'src/store/reducers/cart';
+import { DataSourceComponentProps } from 'src/presentation/shopping-cart/module.types';
 
 export const DataSource = (WrappedComponent: ComponentType<any>) => {
   const dispatch = store?.dispatch;

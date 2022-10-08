@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { useCartSelector } from '../../../selectors';
-import { CartItem } from '../../../types';
-import { useAppDispatch } from '../../../hooks';
-import { incrementProductQuantityInCart as increaseCartItemQuantityAction } from '../../../store/actions/cart';
-import { CartItemIncrementType } from '../../../store/reducers/cart';
+import { useCartSelector } from 'src/selectors';
+import { CartItem } from 'src/types';
+import { useAppDispatch } from 'src/hooks';
+import { incrementProductQuantityInCart as increaseCartItemQuantityAction } from 'src/store/actions/cart';
+import { CartItemIncrementType } from 'src/store/reducers/cart';
 
 function IncreaseCartItemQuantityUseCase(): Function {
   const dispatch = useAppDispatch();
